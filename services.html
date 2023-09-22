@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>NirWayFit</title>
+    <title>Nirwayfit</title>
     <meta name="keywords" content="NirWayFit" />
     <meta name="description" content="NirWayFit" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -36,55 +36,6 @@
 
     <!-- Main Style CSS  -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
-    <style>
-    
-    label,
-input {
-  color: #333;
-  font: 14px/20px Arial;
-}
-        
-        label {
-  display: inline-block;
-  width: 5em;
-  padding: 0 0em;
-  text-align: right;
-}
-
-/* Hide the file input using
-opacity */
-[type="file"] {
-  position: absolute;
-  filter: alpha(opacity=0);
-  opacity: 0;
-}
-input,
-[type="file"] + label {
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  text-align: left;
-  padding: 10px;
-  width: 150px;
-  margin: 0;
-  left: 0;
-  position: relative;
-}
-[type="file"] + label {
-  text-align: center;
-  left: 0.5em;
-  top: 0.5em;
-  /* Decorative */
-  background: #e07c06;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-[type="file"] + label:hover {
-  background: #264796;
-}
-
-    </style>
 </head>
 <body>
 
@@ -105,6 +56,7 @@ input,
 	</div>
 	<!-- Loader End -->
 
+    
    <!-- Header Start -->
     <header class="site-header">
         <!--Navbar Start  -->
@@ -134,18 +86,18 @@ input,
                                     <i class="menu-background middle"></i>
                                     <i class="menu-background bottom"></i>
                                     <ul class="menu">
-                                        <li><a href="index.html" title="Home">Home</a></li>   
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li ><a href="services.html">Services</a></li>
+                                        <li ><a href="index.html" title="Home">Home</a></li>   
+                                        <li ><a href="about-us.html">About Us</a></li>
+                                        <li class="active" ><a href="services.html">Services</a></li>
                                         <li><a href="sales.html">Sales</a></li>
-                                        <li class="sub-items active">
+                                        <li class="sub-items">
                                             <a href="trainers.html" title="Classes">Trainers</a>
                                             <ul class="sub-menu">
                                                 <li><a href="applyjob.html" title="Classes">Trainer Job Apply</a></li>
                                                 <li><a href="applyjob.html" title="Class Detail">Hire a Trainer</a></li>
                                             </ul>
                                         </li>
-                                        <li ><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -161,18 +113,18 @@ input,
     <!-- Header End -->
 
     <!--Banner Start-->
-    <section class="main-inner-banner jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%" style="background-image: url(assets/images/contact-us-in-banner.jpg);">
+    <section class="main-inner-banner jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%" style="background-image: url(assets/images/about-in-banner.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="banner-in-title">
-                        <h1 class="h1-title">Trainer Jobs</h1>
+                        <h1 class="h1-title">Services</h1>
                     </div>
                     <div class="banner-breadcum">
                         <ul>
-                            <li><a href="javascript:void(0);">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><i class="fa fa-chevron-right"></i></li>
-                            <li><a href="javascript:void(0);">Trainer Jobs</a></li>
+                            <li><a href="about-us.html">Services</a></li>
                         </ul>
                     </div>
                 </div>
@@ -181,7 +133,9 @@ input,
     </section>
     <!--Banner End-->
 
-    <!--Trainer Jobs Start-->
+ 
+
+   <!--Service Form Start-->
     <section class="main-contact-in">
         <div class="container">
             <div class="row align-items-center">
@@ -189,7 +143,7 @@ input,
                 <div class="col-lg-6">
                     <div class="appointment-bg wow fadeInRight" data-wow-delay=".5s">
                         <div class="appointment-title">
-                            <h2 class="h2-title">Get A Job</h2>
+                            <h2 class="h2-title">Service At your Door Step</h2>
                             <div class="line"></div>
                         </div>
                         <form>
@@ -199,82 +153,44 @@ input,
                                         <input type="text" name="FullName" class="form-input" placeholder="Full Name" required="">
                                     </div>
                                 </div>
+
                                 <div class="col-md-12">
                                     <div class="form-box">
-                                        <input type="text" name="FatherName" class="form-input" placeholder="Father Name" required="">
-                                    </div>
-                                </div>
-                                 <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="text" name="Qualification" class="form-input" placeholder="Qualification" required="">
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="text" name="PrevExp" class="form-input" placeholder="Previous Experience" required="">
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-12">
-                                    <div class="form-box" >
-                                         
-                                         <select id="trainertype" name="trainertype"  class="form-select">       
-                                                <option value="personaltrainer" style="font-size:15px;" selected> Personal trainer </option>
-                                                <option value="gymtrainer" style="font-size:15px;">Gym trainer</option>
-                                                <option value="yogatrainer" style="font-size:15px;">Yoga trainer  </option>
-                                                <option value="bouncers" style="font-size:15px;" >Bouncers </option>
-                                                <option value="crickettrainer" style="font-size:15px;">Cricket trainer</option>
-                                                <option value="karatetrainer" style="font-size:15px;">karate trainer</option>
-                                         </select>
+                                        <input type="text" name="Phone No" class="form-input" placeholder="Phone No" required="">
                                     </div>
                                 </div>
 
                                 <div class="col-md-12">
                                     <div class="form-box">
-                                        <input type="file" name="Proofs" id="Proofs" class="form-input" placeholder="Proofs" required="">
-                                         <label for="Proofs"> AADHAR Card</label>
+                                        <input type="email" name="location" class="form-input" placeholder="location" required="">
                                     </div>
                                 </div>
+
                                 
+
+
+                                <div class="col-md-12">
+                                    <div class="form-box" >
+                                              <label for="device"  class="form-label">Choose your device</label>
+                                              <select id="device" name="device"  
+                                                class="form-select">
+                                                <option value="Treadmill" style="font-size:15px;" selected>Treadmill</option>
+                                                <option value="CrossTrainer" style="font-size:15px;">Cross Trainer </option>
+                                                <option value="MultiGym" style="font-size:15px;">Multi Gym</option>
+                                                <option value="Spinbike" style="font-size:15px;" >Spin bike</option>
+                                                <option value="Rowingmachine" style="font-size:15px;">Rowing machine</option>
+                                              </select>
+                                    </div>
+                                </div>
+
+
                                 <div class="col-md-12">
                                     <div class="form-box">
-                                        <input type="file" name="resume" id="resume" class="form-input" placeholder="Resume" >
-                                         <label for="resume">Resume</label>
+                                        <input type="textarea" name="message" class="form-input" placeholder="Message" required="">
                                     </div>
                                 </div>
                                 
-                                
-                                 <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="text" name="Phone No" class="form-input" placeholder="Phone No." required="">
-                                    </div>
-                                </div>
-                                
-                                
-                                <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="email" name="EmailAddress" class="form-input" placeholder="Email Address" required="">
-                                    </div>
-                                </div>
-                                
-                               
-                                
-                                <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="text" name="ExpectedSalary" class="form-input" placeholder="Expected Salary" required="">
-                                    </div>
-                                </div>
-                                
-                                 <div class="col-md-12">
-                                    <div class="form-box">
-                                        <input type="file" name="ProfilePhoto" id="ProfilePhoto" class="form-input" placeholder="Profile Photo" >
-                                         <label for="ProfilePhoto">Profile Photo</label>
-                                    </div>
-                                </div>
-                                
-                           
-                                
+                                 
                                 <div class="col-12">
                                     <div class="form-box mb-0">
                                         <button type="submit" class="sec-btn"><span>Submit Now</span></button>
@@ -288,11 +204,10 @@ input,
             </div>
         </div>
     </section>
-    <!--Trainer Jobs End-->
+    <!--Service Form End-->
 
 
-
-   <!--Footer Start-->
+    <!--Footer Start-->
     <footer class="main-footer">
         <div class="footer-overlay-bg animate-this">
             <img src="assets/images/footer-overlay.png" alt="Overlay">
@@ -327,7 +242,7 @@ input,
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="class-detail.html">Sales</a></li>
+                            <li><a href="sales.html">Sales</a></li>
                             <li><a href="trainers.html">Trainers</a></li>
                             <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
@@ -415,31 +330,7 @@ input,
         </svg>
      </div>
     <!--BAck To Top End-->
-<script>
 
-// A $( document ).ready() block.
-
-$( document ).ready(function() {
-    
-     $("[type=file]").on("change", function(){
-  // Name of file and placeholder
-  var file = this.files[0].name;
-  var dflt = $(this).attr("placeholder");
-  if($(this).val()!=""){
-    $(this).next().text(file);
-  } else {
-    $(this).next().text(dflt);
-  }
-});
-
-
-});
-    
-   
-
-
-</script>
-  
     
 <!-- Jquery JS Link -->
 <script src="assets/js/jquery.min.js"></script>
@@ -459,6 +350,16 @@ $( document ).ready(function() {
 
 <!--Bg Moving Js-->
 <script src="assets/js/bg-moving.js"></script>
+
+<!--Magnific Popup JS-->
+<script src="assets/js/magnific-popup.js"></script>
+<script src="assets/js/custom-magnific-popup.js"></script>
+
+<!--Progress Bar JS-->
+<script src="assets/js/custom-progress-bar.js"></script>
+
+<!--Scroll Count JS-->
+<script src="assets/js/custom-scroll-count.js"></script>
 
 <!--Back To Top JS-->
 <script src="assets/js/back-to-top.js"></script>
